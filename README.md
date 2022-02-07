@@ -2,7 +2,6 @@
 
 목적 : 주어진 문장 분류기의 영문으로 된 음식점 리뷰의 긍부정을 학습하여 정확도를 올리는 프로젝트입니다.
 
----
 
 ## 목적
 
@@ -26,58 +25,26 @@ Bert 모델을 활용하여 데이터 전처리과정, 하이퍼 파라미터 �
 ### Train
 
 - BertForSequenceClassification 모델 활용
-  :arrow_forward: 기존의 bert 모델에서 단일 문장을 입력받아 cls 토큰이 분류값 중 하나가 되도록 학습
 - Optimizer : AdamW 활용
-- 
+- Hyper Parameter 변경하며 성능 비교
+- Early Stopping 활용
+
+### issue
+
+- 초반 prediction의 성능이 0.5로 비정상적으로 낮은 수치가 나오는 현상
+- Hyper Parameter 변경
+
+### Result
+```bash
+optimizer : AdamW
+batch_size : 64
+Learning_rate : 5e-5
+random_seed : 42
+epoch : 4
+````
+위의 조건으로 0.988의 성능 달성
 
 
-### Break down into end to end tests
 
-Explain what these tests test and why
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
