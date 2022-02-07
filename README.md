@@ -1,6 +1,7 @@
-# Project Title
+# Text Classification
 
-One Paragraph of project description goes here
+목적 : 주어진 문장 분류기의 영문으로 된 음식점 리뷰의 긍부정을 학습하여 정확도를 올리는 프로젝트입니다.
+
 
 ## Getting Started
 
