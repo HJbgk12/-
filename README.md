@@ -37,7 +37,7 @@ Bert 모델을 활용하여 데이터 전처리과정, 하이퍼 파라미터 �
 ### Result
 ```bash
 optimizer : AdamW
-batch_size : 64
+batch_size : 128
 Learning_rate : 5e-5
 random_seed : 42
 epoch : 4
